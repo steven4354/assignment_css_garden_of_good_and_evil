@@ -15,6 +15,8 @@ const hbs = hb.create({
   defaultLayout: "main"
 });
 
+app.use(Express.static(`${__dirname}/public`))
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cookieParser());

@@ -3,19 +3,25 @@
     <h1>Hello, world!</h1>
 
     <form method="post" action="/postform">
-      <div class="form-group">
-        <input type="radio" name="goodEvil" id="good"/>
-        <label for="good">Good</label>
-        <input type="radio" name="goodEvil" id="evil"/>
-        <label for="evil">Evil</label>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="goodevil" id="exampleRadios1" value="good" checked>
+          Good
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="goodevil" id="exampleRadios2" value="evil">
+          Evil
+        </label>
       </div>
       <div>
         <label for="favoritefood">Favorite Food: </label>
         <input name="favoritefood" type="text" id="favoritefood" placeholder="Favorite Food" />
       </div>
       <div class="form-group">
-        <label for="exampleFormControlSelect1">Favorite Color: </label>
-        <select name="favoritecolor" class="form-control" id="exampleFormControlSelect1">
+        <label for="favoritecolor">Favorite Color: </label>
+        <select name="favoritecolor" class="form-control" id="favoritecolor">
         <option>Blue</option>
         <option>Red</option>
         <option>Yellow</option>

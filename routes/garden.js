@@ -7,12 +7,17 @@ const cookieParser = require("cookie-parser");
 //const garden = require('./views/garden.handlebars')
 
 router.get("/", (req, res) => {
-  res.render("garden", { gardens: "" });
+  if (req.cookies){
+    console.log("cookies" + req.cookies);
+  }
+  res.render("garden", { });
 });
 
 router.post("/postform", (req, res) => {
-  console.log("Body: " + req.body.goodEvil);
-  //console.log("Good or Evil: " + goodEvil);
+  res.cookie('goodevil', req.body.goodevil)
+  res.cookie('favoritefood', req.body.favoritefood)
+  res.cookie('favoritecolor', req.body.favoritecolor)
+  res.cookie('insanity', req.body.insanity)
   res.redirect("back");
 });
 
