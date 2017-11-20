@@ -1,9 +1,11 @@
-const app = require("express");
+const Express = require("express");
 const hb = require("express-handlebars");
-const garden = require("garden");
+const garden = require("./routes/garden");
 
 const port = 3000;
 const host = "localhost";
+
+const app = Express()
 
 const hbs = hb.create({
   partialsDir: "views/",

@@ -2,7 +2,10 @@ const Express = require("express");
 const router = Express.Router();
 const fs = require("fs");
 
-router.get("/", (req, res) => {
-}
+//const garden = require('./views/garden.handlebars')
 
-module.exports = garden;
+router.get("/", (res, req) => {
+  res.render('garden')
+})
+
+module.exports = router;
