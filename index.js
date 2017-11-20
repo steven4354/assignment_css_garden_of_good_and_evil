@@ -2,18 +2,20 @@ const Express = require("express");
 const hb = require("express-handlebars");
 const router = Express.Router();
 const garden = require("./routes/garden");
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
 
 const port = 3000;
 const host = "localhost";
 
 const app = Express();
 
-const cookieParser = require("cookie-parser");
-
 const hbs = hb.create({
   partialsDir: "views/",
   defaultLayout: "main"
 });
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(cookieParser());
 
