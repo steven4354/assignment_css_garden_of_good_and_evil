@@ -19,6 +19,10 @@
         <label for="favoritefood">Favorite Food: </label>
         <input name="favoritefood" type="text" id="favoritefood" placeholder="Favorite Food" />
       </div>
+      <div>
+        <label for="worstfood">Worst Food: </label>
+        <input name="worstfood" type="text" id="worstfood" placeholder="Worst Food" />
+      </div>
       <div class="form-group">
         <label for="favoritecolor">Favorite Color: </label>
         <select name="favoritecolor" class="form-control" id="favoritecolor">
@@ -29,9 +33,31 @@
         <option>Green</option>
         </select>
       </div>
+      <div class="form-group">
+        <label for="worstcolor">Least Favorite Color: </label>
+        <select name="worstcolor" class="form-control" id="worstcolor">
+        <option>Blue</option>
+        <option>Red</option>
+        <option>Yellow</option>
+        <option>Purple</option>
+        <option>Green</option>
+        </select>
+      </div>
+      <div>
+        <label for="favoriteanimal">Favorite Animal: </label>
+        <input name="favoriteanimal" type="text" id="favoriteanimal" placeholder="Animal you like the most." />
+      </div>
+      <div>
+        <label for="worstanimal">Worst Animal: </label>
+        <input name="worstanimal" type="text" id="worstanimal" placeholder="Animal you dislike the most." />
+      </div>
+      <div>
+        <label for="bio">Personal Bio: </label>
+        <textarea name="bio" type="text" placeholder="Write a short description of yourself here." rows="5" cols="200"></textarea>
+      </div>
       <label for="fader">Insanity Level</label>
       <input name="insanity" type="range" min="0" max="10" value="5" id="fader"
-      	step="1" oninput="outputUpdate(value)">
+      	step="1" oninput="outputUpdate(value)"/>
       <output for="fader" id="volume">5</output>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
