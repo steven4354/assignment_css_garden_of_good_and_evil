@@ -1,5 +1,5 @@
 
-  <div class="main">
+  <div class="main {{goodEvil}} container">
     <h1>Questionaire</h1>
 
     <form method="post" action="/postform">
@@ -25,22 +25,22 @@
       </div>
       <div class="form-group">
         <label for="favoritecolor">Favorite Color: </label>
-        <select name="favoritecolor" class="form-control" id="favoritecolor">
-        <option>Blue</option>
-        <option>Red</option>
-        <option>Yellow</option>
-        <option>Purple</option>
-        <option>Green</option>
+        <select name="favoritecolor" class="form-control col-sm-4" id="favoritecolor">
+        <option>blue</option>
+        <option>red</option>
+        <option>yellow</option>
+        <option>purple</option>
+        <option>green</option>
         </select>
       </div>
       <div class="form-group">
         <label for="worstcolor">Least Favorite Color: </label>
-        <select name="worstcolor" class="form-control" id="worstcolor">
-        <option>Blue</option>
-        <option>Red</option>
-        <option>Yellow</option>
-        <option>Purple</option>
-        <option>Green</option>
+        <select name="worstcolor" class="form-control col-sm-4" id="worstcolor">
+        <option>blue</option>
+        <option>red</option>
+        <option>yellow</option>
+        <option>purple</option>
+        <option>green</option>
         </select>
       </div>
       <div>
@@ -56,9 +56,10 @@
         <textarea name="bio" type="text" placeholder="Write a short description of yourself here." rows="5" cols="100"></textarea>
       </div>
       <label for="fader">Insanity Level</label>
-      <input name="insanity" type="range" min="0" max="10" value="5" id="fader"
+
+      <input class="col-xl-4" name="insanity" type="range" min="1" max="5" value="1" id="fader"
       	step="1" oninput="outputUpdate(value)"/>
-      <output for="fader" id="volume">5</output>
+      <output for="fader" id="volume">1</output>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
 

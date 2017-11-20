@@ -1,7 +1,37 @@
 .good {
-  background-color: blue;
+  background-color: #87CEFA;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .evil {
   background-color: red;
+  font-family: 'Spectral SC', serif;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.purple {
+  color: purple;
+}
+
+.green {
+  color: green;
+}
+
+.center {
+  text-align: center;
+}
+
+ul, ol {
+  list-style: none;
 }
